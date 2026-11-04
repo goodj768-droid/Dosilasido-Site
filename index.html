@@ -640,7 +640,7 @@ function defaultState(){
   return {
     schemaVersion:SCHEMA_VERSION,
     contents:[],trash:[],kpis:[],checks:{},drafts:{},commentsPending:[],newsCache:null,
-    settings:{target:10000,targetContents:360,dailyTarget:4,brand:'STOCKWISE.ID',handle:'@Dosilasido',theme:'dark',corsProxy:'https://api.allorigins.win/raw?url='},
+    settings:{target:10000,targetContents:360,dailyTarget:4,brand:'STOCKWISE.ID',handle:'@Dosilasido',theme:'dark',corsProxy:'/.netlify/functions/rss?url='},
     newsSources:DEFAULT_NEWS_SOURCES.map(s=>({...s})),
     analytics:{yt:{apiKey:'',channelId:''},social:{proxy:'',tiktok:'',instagram:''}},
     tasks:[...DEFAULT_TASKS],
